@@ -1,0 +1,639 @@
+:root{
+    /*### Primary*/
+
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+
+    /*### Accen*/
+
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+
+    /*### Neutral*/
+
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 700em;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    margin: auto auto;
+    font-family: "Open sans", serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 25em;
+    max-height: fit-content;
+}
+
+/*syling header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+}
+header img{
+    width: 25%;
+    height: auto;
+}
+.headings{
+    display: flex;
+    gap: 0.75em;
+    align-items: center;
+    font-size: 0.80em;
+    font-weight: 400;
+    color: var(--Very-Dark-Blue);
+    font-family: Raleway, serif;
+    font-weight: 400;
+}
+
+/*styling first column*/
+.first-column{
+    display: flex;
+    flex-direction: column;
+    margin: 5em auto;
+    text-align: center;
+    padding: 1.5em;
+}
+.first-column img{
+    width: 100%;
+    margin: 1em auto;
+}
+.first-column h1{
+    font-size: 1.5em;
+    line-height: 1.6em;
+}
+.first-column p{
+    font-size: 1em;
+    margin: 2.5em auto;
+    line-height: 1.4em;
+}
+.first-column input{
+    width: 95%;
+    height: 3.5em;
+    border-radius: 0.3em;
+    margin: 1em auto;
+    border: 1px solid black;
+}
+.first-column input::placeholder{
+    padding-left: 2em;
+    color: var(--Light-Gray);
+    letter-spacing: 1px;
+}
+.first-column button{
+    width: 95%; 
+    border-radius: 0.3em;
+    background-color: var(--Bright-Blue);
+    padding: 0.8em;
+    font-weight: 600;
+    font-size: 1em;
+    font-family: Raleway;
+    border: none;
+    margin-bottom: 2em;
+}
+button a{
+    text-decoration: none;
+    color: var(--Light-Grayish-Blue);
+}
+button:hover{
+    cursor: pointer;
+    background-color: hsl(224, 100%, 70%);
+}
+
+
+/*styling second column*/
+.second-column{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 400;
+    padding: 1.5em;
+}
+.second-column img{
+    width: 100%;
+    margin: 4em auto;
+}
+.second-info h1{
+    font-size: 1em;
+    margin: 2em auto;
+}
+.second-info p{
+    text-align: left;
+    font-size: 0.9em;
+    color: var(--Desaturated-Blue);
+    margin: 1em auto;
+}
+.learn-more{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 2em 0;
+}
+.learn-more img{
+    width: 7%;
+    margin: 0 1em;
+}
+.learn-more a{
+    text-decoration: none;
+    color: var(--Moderate-Cyan);
+    font-size: 0.9em;
+    font-weight: 400;
+    text-decoration: underline solid 1px var(--Moderate-Cyan);
+    text-underline-offset: 10px;
+}
+.learn-more a:hover{
+    color: hsl(170, 70%, 60%);
+}
+
+.testimonial-card{
+    background-color: white;
+    box-shadow: 1px 1px 10px var(--Light-Gray);
+    display: flex;
+    flex-direction: column;
+    margin: 2em 1.5em;
+    padding: 1.5em;
+    border-radius: 0.25em;
+}
+.testimony{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.testimony img{
+    width: 6%;
+    margin: 0;
+}
+.testimony p{
+    font-size: 0.7em;
+    font-weight: 600;
+    color: var(--Desaturated-Blue);
+    line-height: 1.6em;
+}
+.user{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.user img{
+    width: 1.75em;
+    height: 1.75em;
+    border-radius: 50%;
+    margin: 0 ;
+}
+.user-info{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.25em;
+    text-align: left;
+    margin: 1em 2em;
+}
+.user-info h1{
+    font-size: 2.25em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.user-info h2{
+    font-size: 2em;
+    font-weight: 500;
+    margin: 0;
+}
+
+/*styling third column*/
+.third-column{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Desaturated-Blue);
+    color: var(--Light-Grayish-Blue);
+    text-align: center;
+    padding: 3.25em 2.5em;
+    line-height: 1.5em;
+}
+.early-access h1{
+    font-size: 1em;
+    font-weight: 700;
+}
+.early-access p{
+    font-size: 0.9em;
+    font-weight: 300;
+    margin: 1em 0;
+}
+.second-button input{
+    width: 80%;
+    height: 3em;
+    border-radius: 0.2em;
+    margin: 1em auto;
+    border: 0.1em solid black;
+}
+.second-button input::placeholder{
+    padding-left: 1em;
+    color: var(--Light-Gray);
+    letter-spacing: 1px;
+    font-size: 0.75em;
+    font-weight: 300;
+    font-family: Raleway;
+}
+.second-button button{
+    width: 80%; 
+    border-radius: 0.2em;
+    background-color: var(--Bright-Blue);
+    padding: 0.5em;
+    font-weight: 600;
+    font-size: 0.9em;
+    font-family: Raleway;
+    border: none;
+    margin-bottom: 2em;
+}
+button a{
+    text-decoration: none;
+    color: var(--Light-Grayish-Blue);
+    font-size: 0.75em;
+}
+button:hover{
+    cursor: pointer;
+    background-color: hsl(224, 100%, 70%);
+}
+
+/*styling fourth column or footer*/
+footer .fourth-column{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Very-Dark-Blue);
+    padding: 3em 3em;
+    color: var(--Light-Grayish-Blue);
+    font-size: 0.65em;
+}
+.logo{
+    width: 60%;
+    margin: 1.5em 0;
+}
+.address h1{
+    font-family: "Open sans";
+    font-weight: 100;
+    margin: 0.5em;
+}
+.address .phone{
+    display: flex;
+    align-items: center;
+}
+.phone img{
+    width: 6%;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+}
+.address .email{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.email img{
+    width: 6%;
+    margin-right: 1em;
+}
+ul{
+    list-style: none;
+    line-height: 2.45em;
+    margin: 1.25em 0;
+    font-size: 1.5em;
+}
+ul a{
+    text-decoration: none;
+    color: var(--Light-Grayish-Blue);
+}
+ul a:hover{
+    color: var(--Desaturated-Blue);
+}
+.social-media{
+    display: flex;
+    height: 2em;
+    justify-content: center;
+    margin: 2em;
+}
+.facebook{
+    border: 1px solid white;
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 50%;
+}
+.instagram{
+    border: 1px solid white;
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 50%;
+}
+.twitter{
+    border: 1px solid white;
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 50%;
+    margin: 0 1em;
+}
+
+/*for screens above 48em*/
+@media (min-width:48em){
+    body{
+        background-image: url(./images/bg-curve-desktop.svg);
+    }
+    .container{
+        max-width: 48em;
+    }
+    .headings{
+        font-size: 1.2em;
+    }
+    .logo{
+        width: 40%;
+    }
+}
+
+/*for screens above 60em*/
+@media (min-width:60em){
+    body{
+        background-image: url(./images/bg-curve-desktop.svg);
+    }
+    .container{
+        max-width: 60em;
+    }
+    header{
+        padding: 2.5em;
+        font-size: 0.7em;
+    }
+    header img{
+        width: 15%;
+    }
+    .headings{
+        gap: 1em;
+    }
+/*first column*/
+    .first-column{
+        flex-direction: row-reverse;
+        text-align: left;
+        margin: 2.5em auto;
+    }
+    .first-column img{
+        width: 50%;
+        margin: 0;
+    }
+    .first-column h1{
+        font-size: 1.8em;
+        margin-top: 1em;
+    }
+    .first-column p{
+        font-size: 0.85em;
+        margin: 1em 0;
+    }
+    .first-button{
+        display: flex;
+        gap: 1em;
+        justify-items: center;
+        align-content: center;
+    }
+    .first-column input{
+        width: 52%;
+        height: 3em;
+        margin: 0 0;
+    }
+    .first-column button{
+        width: 35%;
+        margin: 0 0;
+        padding: 0.5em;
+    }
+/*second column*/
+    .second-column{
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left;
+    }
+    .second-column img{
+        width: 40%;
+        height: 70%;
+        margin: auto 0;
+    }
+    .description-second-column{
+        display: flex;
+        flex-direction: column;
+    }
+    .second-info h1{
+        font-size: 1.75em;
+        margin: 0;
+        margin-bottom: 1em;
+    }
+    .second-info p{
+        font-size: 0.8em;
+        font-weight: 600;
+        margin: 1em 0;
+        margin-right: 11em;
+    }
+    .learn-more{
+        display: flex;
+        align-items: center;
+        justify-content: start; 
+        margin: 0 0;
+        font-size: 0.85em;
+    }
+    .learn-more img{
+        width: 4%;
+        margin: 0 0.5em;
+        margin-top: 8px;
+    }
+    .testimonial-card{
+        justify-content: start;
+        margin: 2.5em 0;
+        margin-right: 17em;
+    }
+    .testimony img{
+        width: 5%;
+        margin-bottom: 0.5em;
+    }
+    .user{
+        margin-top: 0.5em;
+    }
+    .user img{
+        width: 1.75em;
+        height: 1.75em;
+        border-radius: 50%;
+    }
+    
+/*third column*/
+    .third-column{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        justify-content: start;
+        line-height: normal;
+        gap: 10em;
+        padding: 2em 2em;
+    }
+    .early-access{
+        width: 50%;
+    }
+    .early-access h1{
+        font-size: 1.25em;
+        margin-top: 1.5em;
+    }
+    .early-access p{
+        font-size: 0.7em;
+    }
+    .second-button{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 50%;
+        gap: 1em;
+        margin-top: 2em;
+    }
+    .third-column input{
+        width: 90%;
+        height: 2.5em;
+        margin: 0;
+    }
+    .third-column button{
+        width: 40%;
+    }
+/*fourth column*/
+    footer .fourth-column{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 4em;
+        font-size: 0.45em
+    }
+    .logo{
+        width: 65%;
+    }
+    ul{
+        font-size: 1.25em;
+        margin-top: 6em;
+    }
+    .social-media{
+        margin-top: 7.5em;
+        margin-right: 10em;
+    }
+}
+
+/*screens above 90em*/
+@media (min-width:90em){
+    body{
+        background-image: url(./images/bg-curve-desktop.svg);
+    }
+    .container{
+        max-width: 90em;
+    }
+    header{
+        padding: 5em;
+        font-size: 0.9em;
+    }
+/*first column*/
+    .first-column{
+        padding: 4em;
+        margin: 0 auto;
+    }
+    .first-column h1{
+        font-size: 2.5em;
+        margin-top: 2em;
+    }
+    .first-column p{
+        font-size: 1.25em;
+        line-height: 1.1em;
+    }
+    .first-column input{
+        width: 50%;
+    }
+    .first-column button{
+        width: 30%;
+    }
+/*second column*/   
+    .second-column{
+        margin-top: 5em;
+        margin-right: 0;
+    }
+    .second-column img{
+        width: 70%;
+        height: 50%;
+        margin: 3em 1em;
+        margin-bottom: 0;
+    }
+    .second-column h1{
+        font-size: 2.5em;
+    }
+    .second-column p{
+        font-size: 1.1em;
+    }
+    .learn-more{
+        display: flex;
+        align-items: center;
+        justify-content: start; 
+        margin: 0 0;
+        font-size: 1.2em;
+    }
+    .learn-more img{
+        width: 5%;
+        height: auto;
+        margin: 0 0.5em;
+        margin-top: 8px;
+    }
+    .testimonial-card{
+        justify-content: start;
+        margin: 2.5em 0;
+        margin-right: 15em;
+        margin-bottom: 0;
+    }
+    .testimony img{
+        width: 4.5%;
+        margin: 0;
+    }
+    .testimony p{
+        font-size: 0.95em;
+        margin: 1em 0;
+    }
+    .user{
+        margin: 0;
+        font-size: 1.3em;
+    }
+    .user img{
+        width: 1.75em;
+        height: 1.75em;
+        border-radius: 50%;
+        margin: 0;
+    }
+/*third column*/
+    .third-column{
+        margin-top: -22em;
+        padding: 3em 5em;
+    }
+    .third-column h1{
+        font-size: 1.75em;
+    }
+    .third-column p{
+        font-size: 1.2em;
+    }
+    .second-button input{
+        height: 2.75em;
+        font-size: 1.35em;
+        margin-top: 1em
+    }
+    .second-button button{
+        height: 2.75em;
+        font-size: 1.25em;
+        margin-top: 1em
+    }
+/*fourth column*/
+    footer .fourth-column{
+        font-size: 0.75em;
+        padding: 7em;
+    }
+}
+
