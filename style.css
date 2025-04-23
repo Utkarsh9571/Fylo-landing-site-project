@@ -82,12 +82,17 @@ header img{
     margin: 2.5em auto;
     line-height: 1.4em;
 }
+.first-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .first-column input{
     width: 95%;
     height: 3.5em;
     border-radius: 0.3em;
     margin: 1em auto;
-    border: 1px solid black;
+    border: 1px solid rgb(129, 129, 129);
 }
 .first-column input::placeholder{
     padding-left: 2em;
@@ -95,19 +100,17 @@ header img{
     letter-spacing: 1px;
 }
 .first-column button{
-    width: 95%; 
+    text-decoration: none;
+    color: var(--Light-Grayish-Blue);
+    width: 21em; 
     border-radius: 0.3em;
     background-color: var(--Bright-Blue);
-    padding: 0.8em;
+    padding: 0.7em;
     font-weight: 600;
     font-size: 1em;
     font-family: Raleway;
     border: none;
     margin-bottom: 2em;
-}
-button a{
-    text-decoration: none;
-    color: var(--Light-Grayish-Blue);
 }
 button:hover{
     cursor: pointer;
@@ -237,7 +240,7 @@ button:hover{
     height: 3em;
     border-radius: 0.2em;
     margin: 1em auto;
-    border: 0.1em solid black;
+    border: 1px solid rgb(129, 129, 129);
 }
 .second-button input::placeholder{
     padding-left: 1em;
@@ -251,17 +254,16 @@ button:hover{
     width: 80%; 
     border-radius: 0.2em;
     background-color: var(--Bright-Blue);
-    padding: 0.5em;
+    padding: 0.85em;
     font-weight: 600;
-    font-size: 0.9em;
     font-family: Raleway;
     border: none;
     margin-bottom: 2em;
-}
-button a{
-    text-decoration: none;
     color: var(--Light-Grayish-Blue);
     font-size: 0.75em;
+}
+a{
+    text-decoration: none;
 }
 button:hover{
     cursor: pointer;
@@ -357,6 +359,9 @@ ul a:hover{
     .logo{
         width: 40%;
     }
+    .first-column button{
+        width: 43em;
+    }
 }
 
 /*for screens above 60em*/
@@ -397,6 +402,7 @@ ul a:hover{
     }
     .first-button{
         display: flex;
+        flex-direction: row;
         gap: 1em;
         justify-items: center;
         align-content: center;
@@ -407,9 +413,11 @@ ul a:hover{
         margin: 0 0;
     }
     .first-column button{
-        width: 35%;
+        width: 100%;
         margin: 0 0;
-        padding: 0.5em;
+        padding: 1.1em;
+        text-align: center;
+        font-size: 0.75em;
     }
 /*second column*/
     .second-column{
@@ -501,7 +509,9 @@ ul a:hover{
         margin: 0;
     }
     .third-column button{
-        width: 40%;
+        width: 100%;
+        font-size: 0.6em;
+        padding: 0.85em 2.5em;
     }
 /*fourth column*/
     footer .fourth-column{
@@ -553,7 +563,7 @@ ul a:hover{
         width: 50%;
     }
     .first-column button{
-        width: 30%;
+        width: 15em;
     }
 /*second column*/   
     .second-column{
@@ -628,7 +638,7 @@ ul a:hover{
     .second-button button{
         height: 2.75em;
         font-size: 1.25em;
-        margin-top: 1em
+        margin-top: 0.5em;
     }
 /*fourth column*/
     footer .fourth-column{
